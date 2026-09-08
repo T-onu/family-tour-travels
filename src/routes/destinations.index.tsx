@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { BUSINESS } from "@/lib/business";
 import { destinations, heroKerala } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
 import { DestinationCard } from "@/components/site/Cards";
@@ -8,7 +9,7 @@ export const Route = createFileRoute("/destinations/")({
   head: () =>
     pageMeta({
       title: "Destinations",
-      description: "Explore Manali, Shimla, Kashmir, Ladakh, Goa, Kerala, Rajasthan and Char Dham holidays with Family Tour & Travels.",
+      description: `Explore Manali, Shimla, Kashmir, Ladakh, Goa, Kerala, Rajasthan and Char Dham holidays with ${BUSINESS.name}.`,
       path: "/destinations",
     }),
   component: Page,

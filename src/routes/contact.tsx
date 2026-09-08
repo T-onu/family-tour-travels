@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, Mail, Phone } from "lucide-react";
-import { BUSINESS, mailHref, telHref, whatsappHref } from "@/lib/business";
+import { BUSINESS, altTelHref, mailHref, telHref, whatsappHref } from "@/lib/business";
 import { jsonLd, pageMeta } from "@/lib/seo";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { FAQ, SectionHeading } from "@/components/site/Sections";
@@ -35,6 +35,12 @@ function Page() {
               <a href={telHref} className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5 transition hover:border-primary">
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground"><Phone className="h-5 w-5" /></span>
                 <span><span className="block text-xs font-semibold uppercase tracking-widest text-muted-foreground">Call</span><span className="font-semibold">{BUSINESS.phoneDisplay}</span></span>
+              </a>
+            </li>
+            <li>
+              <a href={altTelHref} className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5 transition hover:border-primary">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground"><Phone className="h-5 w-5" /></span>
+                <span><span className="block text-xs font-semibold uppercase tracking-widest text-muted-foreground">Alternate number</span><span className="font-semibold">{BUSINESS.altPhoneDisplay}</span></span>
               </a>
             </li>
             <li>

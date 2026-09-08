@@ -27,7 +27,7 @@ function Page() {
         <div>
           <SectionHeading eyebrow="About us" title="A small team that treats your holiday like our own" />
           <p className="mt-6 leading-relaxed text-foreground/85">
-            {BUSINESS.name} began in {BUSINESS.foundedYear} with a single Innova and a promise: plan every trip the way we'd plan one for our parents. Today we take thousands of travellers a year across the Himalayas, the coasts and the heritage heartland of India — still with the same personal planner on the other end of WhatsApp.
+            {BUSINESS.name} began in {BUSINESS.foundedYear} with a single Innova and a promise: plan every trip the way we'd plan one for our parents. Founded by {BUSINESS.founder}, today we take thousands of travellers a year across the Himalayas, the coasts and the heritage heartland of India — still with the same personal planner on the other end of WhatsApp.
           </p>
           <dl className="mt-8 grid grid-cols-2 gap-6">
             {stats.map((s) => (

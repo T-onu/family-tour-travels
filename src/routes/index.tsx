@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
     pageMeta({
       title: "Premium Family Holidays Across India",
       description:
-        "Plan hill station, beach, pilgrimage and heritage holidays with Family Tour & Travels. Handpicked stays, private cabs and WhatsApp-first planning.",
+        `Plan hill station, beach, pilgrimage and heritage holidays with ${BUSINESS.name}. Handpicked stays, private cabs and WhatsApp-first planning.`,
       path: "/",
     }),
   component: Index,
@@ -41,7 +41,7 @@ function Index() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/20" />
         <div className="container-x relative flex min-h-[88svh] flex-col justify-end pb-16 pt-24 md:pb-24">
-          <p className="eyebrow text-gold">Family Tour & Travels · All India</p>
+          <p className="eyebrow text-gold">{BUSINESS.name} · {BUSINESS.serviceArea}</p>
           <h1 className="mt-4 max-w-3xl text-5xl font-semibold leading-[1.02] md:text-7xl">
             Journeys across India, <em className="font-light italic text-gold">planned like family.</em>
           </h1>
