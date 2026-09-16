@@ -1,10 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.png";
-import { BUSINESS, facebookHref, instagramHref, mailHref, altTelHref, telHref, whatsappHref } from "@/lib/business";
+import { BUSINESS, facebookHref, instagramHref, twitterHref, mailHref, altTelHref, telHref, whatsappHref } from "@/lib/business";
 import { destinations } from "@/lib/data";
 import { InstagramIcon } from "./InstagramIcon";
 import { FacebookIcon } from "./FacebookIcon";
+import { XIcon } from "./XIcon";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Footer() {
@@ -41,6 +42,15 @@ export function Footer() {
               className="grid h-9 w-9 place-items-center rounded-full border border-ink-foreground/20 text-ink-foreground/80 transition-colors hover:border-gold hover:text-gold"
             >
               <FacebookIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={twitterHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
+              className="grid h-9 w-9 place-items-center rounded-full border border-ink-foreground/20 text-ink-foreground/80 transition-colors hover:border-gold hover:text-gold"
+            >
+              <XIcon className="h-4 w-4" />
             </a>
           </div>
         </div>

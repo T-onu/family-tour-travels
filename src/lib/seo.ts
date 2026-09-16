@@ -1,4 +1,4 @@
-import { BUSINESS } from "./business";
+import { BUSINESS, facebookHref, instagramHref, twitterHref } from "./business";
 
 export function pageMeta(opts: { title: string; description: string; path: string; type?: string }) {
   const title = `${opts.title} | ${BUSINESS.name}`;
@@ -32,4 +32,5 @@ export const orgJsonLd = {
   areaServed: "IN",
   foundingDate: String(BUSINESS.foundedYear),
   openingHours: "Mo-Su 08:00-22:00",
+  sameAs: [instagramHref, facebookHref, twitterHref],
 };

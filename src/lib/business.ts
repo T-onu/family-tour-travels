@@ -15,7 +15,7 @@ export const BUSINESS = {
   altPhone: "8219311694",
   altPhoneDisplay: "+91 82193 11694",
   whatsapp: "918091706880",
-  email: "abshthakur@gmail.com",
+  email: "familytours2025@gmail.com",
   /** No office address provided yet — leave null to hide address blocks. */
   address: null as string | null,
   hours: "Mon – Sun, 8:00 AM – 10:00 PM",
@@ -23,17 +23,18 @@ export const BUSINESS = {
   foundedYear: 2012,
   msmeNumber: "UDYAM-HP-04-0041260",
   social: {
-    instagram: "family_toursandtravel",
-    facebook: "Family tours and Travel",
+    instagram: "https://www.instagram.com/familytoursandtravels_?stkn=MWJjNGx2NW53Nmw0eg==",
+    facebook: "https://www.facebook.com/profile.php?id=61577840936226",
+    twitter: "https://x.com/FamilyTours11",
   },
 } as const;
 
 export const telHref = `tel:${BUSINESS.phoneIntl}`;
 export const altTelHref = `tel:+91${BUSINESS.altPhone}`;
 export const mailHref = `mailto:${BUSINESS.email}`;
-export const instagramHref = `https://instagram.com/${BUSINESS.social.instagram}`;
-// Best-effort slug from the Facebook page name — replace with the exact page URL if this doesn't match.
-export const facebookHref = `https://facebook.com/${BUSINESS.social.facebook.replace(/\s+/g, "")}`;
+export const instagramHref = BUSINESS.social.instagram;
+export const facebookHref = BUSINESS.social.facebook;
+export const twitterHref = BUSINESS.social.twitter;
 
 export function whatsappHref(message?: string) {
   const text = message ?? `Hi ${BUSINESS.name}, I'd like to plan a trip. Please share details.`;
